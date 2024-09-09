@@ -1,8 +1,10 @@
 import cv2
-img = cv2.imread("")
+img = cv2.imread("road.jpg")
+# img = cv2.imread("free-video-854671.jpg")
+# img = cv2.imread("images.jpeg")
 gry = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
 car = cv2.CascadeClassifier("cars.xml")
-cars = car.detectMultiScale(gry,1.2,3)
+cars = car.detectMultiScale(gry,1.1,1)
 for (x,y,w,h) in cars:
     cv2.rectangle(img,(x,y),(x+w,y+h),(0,0,255),3)
 
