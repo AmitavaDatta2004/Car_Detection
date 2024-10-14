@@ -1,5 +1,5 @@
 import cv2
-img = cv2.imread("road.jpg")
+img = cv2.imread("free-video-854671.jpg")
 # img = cv2.imread("free-video-854671.jpg")
 # img = cv2.imread("images.jpeg")
 gry = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
